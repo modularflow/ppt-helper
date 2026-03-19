@@ -3,6 +3,7 @@ name = "ppt-agentic-helper"
 version = "0.1.0"
 description = "Agentic helper for creating and updating PowerPoint Gantt charts from project notes."
 readme = "README.md"
+license = "MIT"
 authors = [
     { name = "modularflow", email = "rob@modularflow.ai" }
 ]

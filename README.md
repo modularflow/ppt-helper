@@ -2,6 +2,8 @@
 
 `ppt-agentic-helper` is a Python package and MCP server for turning project notes into PowerPoint Gantt charts, or updating an existing generated Gantt chart with new notes.
 
+License: `MIT`
+
 It is designed around two constraints:
 
 - It uses the legacy OpenAI-compatible `chat/completions` endpoint instead of the newer Responses API.
