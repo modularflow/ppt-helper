@@ -1,0 +1,32 @@
+[project]
+name = "ppt-agentic-helper"
+version = "0.1.0"
+description = "Agentic helper for creating and updating PowerPoint Gantt charts from project notes."
+readme = "README.md"
+authors = [
+    { name = "modularflow", email = "rob@modularflow.ai" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=3.1.1",
+    "pydantic>=2.12.5",
+    "python-dateutil>=2.9.0.post0",
+    "python-pptx>=1.0.2",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+ppt-agentic-helper = "ppt_agentic_helper:main"
+ppt-agentic-mcp = "ppt_agentic_helper.server:run"
+
+[build-system]
+requires = ["uv_build>=0.10.1,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
